@@ -13,3 +13,14 @@ Ha, you thought that was easy? Actually, since you are most likely doing this fo
 ![Remote Connection](cse15l-labreport-week1-remoteloginfirst.png)
 
 ## Step3: Trying Some Commands
+![Some Commands](cse15l-labreport-week1-somecommands.png)
+I am going to demonstrate two commands that are more used and applicable to the current directory.
+
+**ls**
+
+'ls' stands for list and it will show you the contents of the current directory.
+
+**cat <name_of_file>**
+
+'cat' stands for concatenate and it will print out contents in the file you choose. For instance, I entered 'cat hello.txt' which returns to me the exact texts in the 'hello.txt' file.
+## Step4: Moving Files with scp
