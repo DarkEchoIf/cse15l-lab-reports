@@ -12,7 +12,7 @@ In this step, we will access a remote account(usually on another server) from th
 Ha, you thought that was easy? Actually, since you are most likely doing this for the first time. After you enter the ssh command, you will see some message just like in the picture. Long story short, just like every Term of service you see in your life, you say 'yes' to it; it's also normal to see it the first time you ssh to this account. However, if you have doubts, Professor Poiltz shared this, I will put it here for your information: [Ben Voigt's answer](http://a.com).
 ![Remote Connection](cse15l-labreport-week1-remoteloginfirst.png)
 
-## Step3: Trying Some Commands
+## Step3: Trying Some Commands:
 ![Some Commands](cse15l-labreport-week1-somecommands.png)
 I am going to demonstrate two commands that are more used and applicable to the current directory.
 
@@ -23,4 +23,10 @@ I am going to demonstrate two commands that are more used and applicable to the 
 **cat <name_of_file>**
 
 'cat' stands for concatenate and it will print out contents in the file you choose. For instance, I entered 'cat hello.txt' which returns to me the exact texts in the 'hello.txt' file.
-## Step4: Moving Files with scp
+## Step4: Moving Files with scp:
+![SCP1](cse15l-labreport-week1-scp1.png)
+In the first picture, I first 'cd' to access my CSE11 directory. 'ls' shows me what are in the folder, there are a lot of files, already compiled. I will move 'welcome.java' to the remote account.
+![SCP2](cse15l-labreport-week1-scp2.png)
+As it is shown in the second screenshot, we run the command 'scp Welcome.java cs15lfa22kd@ieng6.ucsd.edu:~/'. The command is composed by three parts: scp, the file you want to move, and the account/directory you want the file to be. We will need to enter the password to complete the moving, but it does not login to the account, hence we login again to check if the file we want is there. Using 'ls' again, we find there is indeed a 'Welcome.java' in the folder, which wasn't in it before. Mission Compelte.(And I totally failed to compile it, since the file refers to some class that the remote account does not include.)
+## Step5: Setting an SSH Key:
+
