@@ -72,3 +72,14 @@ The
 arr[i] = newArray[arr.length - i - 1];
 ```
 This line can reverse the second the half of the array; however, since the reverse is in place, when it comes to the second half of the array, the method is making each elements to change to it self, resulting a mirrored array in the end.
+
+---
+In the 'filter' method in ListExamples.java, the line
+```
+result.add(0, s);
+```
+is the cause of the failure for it to fulfil its intended purpose. 
+Instead of returning checked strings in the order they appear in the input list, this method will return a reversed. This is due to the method's implementation to add new strings to the frount of the returned list. In order to fix this bug, we should just change the line above to
+```
+result.add(s);
+```
