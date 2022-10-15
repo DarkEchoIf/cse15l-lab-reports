@@ -1,5 +1,5 @@
 # CSE15L Lab Report Week 3: Search Engine and Buggy Methods
-## Step1: Simplest Search Engine:
+## Part1: Simplest Search Engine:
 First, I am showing my implementation of a simple search engine.
 
 ```
@@ -57,4 +57,11 @@ class SearchEngine {
     }
 }
 ```
-It is a running program, but far from perfect.
+It is a running program, but far from perfect. Instead of chasing for perfection, let's focus on the functions of the search engine first!
+![Add](CSE15L-Week3-SearchEngine-Add.png)
+In the first picture, I used 'add' as the path and 's=apple' as the query which decides what string to add to the 'list'. Since 'apple' was added to the list, when we request the page to print 'list' which I will demonstrate later, a list containing 'apple' will be printed.
+![Home](CSE15L-Week3-SearchEngine-Home.png)
+In the second pocture, I simply typed '/' and went to this 'home' page of the site. By coming to this site, after each time '/add' is called, the updated list with all its current contents will be printed. This feature may seem redundant since I make the program print the updated list whenever the '/add' page is visited, but this feature of '/add' would be removed if I am going to improve the program. Just calling '/' won't change any value in the program. It simply shows what has been changed by other methods.
+![Search](CSE15L-Week3-SearchEngine-Search.png) 
+Before calling '/search', I added 'pineapple' to the list so the purpose of '/search' will be more obvious. When we use path '/search' then query '?s=app', a method to find strings in list that contain substring 'app' was excuted. A list of valid strings will be returned as a result. This method does not change nor update the value in the program.
+## Part2: Buggy Methods:
