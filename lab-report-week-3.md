@@ -65,3 +65,10 @@ In the second pocture, I simply typed '/' and went to this 'home' page of the si
 ![Search](CSE15L-Week3-SearchEngine-Search.png) 
 Before calling '/search', I added 'pineapple' to the list so the purpose of '/search' will be more obvious. When we use path '/search' then query '?s=app', a method to find strings in list that contain substring 'app' was excuted. A list of valid strings will be returned as a result. This method does not change nor update the value in the program.
 ## Part2: Buggy Methods:
+For the ‘reverInPlace’ method in ArrayExamples.java, the failure-inducing input is an array of integers that need to be reversed. Due to the false implementation of the method, as long as a list has a size larger than 1, does not have identical elements or mirrored elements, the test will be a failure: instead of having a reversed array, the method returns a mirrored array which has the second half of the original array on both sides. 
+The bug for this method lies in the for loop
+The
+``` 
+arr[i] = newArray[arr.length - i - 1];
+```
+This line can reverse the second the half of the array; however, since the reverse is in place, when it comes to the second half of the array, the method is making each elements to change to it self, resulting a mirrored array in the end.
