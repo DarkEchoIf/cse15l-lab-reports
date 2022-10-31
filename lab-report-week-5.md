@@ -6,7 +6,7 @@ In this section, I am going to show the function of -c command for grep. The -c 
 For instance, I wrote the result of 'find 911report "*.txt"' into a new file I created "find_911_txt.txt". By using 'grep -c' on the new file, I got the following result:
 ```
 $ find 911report "*.txt"
-911report
+911report 
 911report/chapter-1.txt
 911report/chapter-10.txt
 911report/chapter-11.txt
