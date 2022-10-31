@@ -113,7 +113,7 @@ $ grep -o ".txt" find_911_txt.txt
 .txt
 
 ```
-As always, commands can make things easier if you are dealing with large amount of lines/data, for instance, the code below prints plane for far more than 17 times(the number of .txt above).
+As always, commands can make things easier if you are dealing with large amount of lines/data, for instance, the code below prints the key words for far more than 17 times(the number of .txt above).
 ```
 $ grep -o "plane" 911report/chapter-1.txt
 plane
@@ -124,6 +124,16 @@ plane
 plane
 plane
 plane
+...
+```
+```
+$ grep -o ".txt" find_plos_txt.txt
+.txt
+.txt
+.txt
+.txt
+.txt
+.txt
 ...
 ```
 Obviously, 'grep -o' achieves to print a key word/ many key words from a file for as many times as it/they appear, but why? I think at this point I have reached both my limitations of imagination and knowledge. Some combination of 'grep -o' and other commands must be very useful, that I believed! Hence this is the last command-line option I chose for this report.
